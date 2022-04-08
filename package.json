@@ -7,16 +7,19 @@
   "scripts": {
     "build": "remix build",
     "dev": "cross-env NODE_ENV=development netlify dev",
-    "start": "cross-env NODE_ENV=production netlify dev"
+    "start": "cross-env NODE_ENV=production netlify dev",
+    "postinstall": "remix setup node"
   },
   "dependencies": {
     "@netlify/functions": "^0.10.0",
     "@remix-run/netlify": "^1.3.5",
     "@remix-run/node": "^1.3.5",
     "@remix-run/react": "^1.3.5",
+    "@remix-run/serve": "1.3.5",
     "cross-env": "^7.0.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "remix": "1.3.5"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.3.5",
