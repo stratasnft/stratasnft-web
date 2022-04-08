@@ -1,3 +1,11 @@
+import { SEOHandle } from "~/types";
+
+export const handle: SEOHandle = {
+  getSitemapEntries: async (request) => {
+    return [{ route: `/`, priority: 1 }];
+  },
+};
+
 export default function Index() {
   return (
     <div>
